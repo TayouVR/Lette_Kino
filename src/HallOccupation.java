@@ -1,3 +1,7 @@
+
+/*
+ * this class is completely unused
+ */
 public class HallOccupation {
 
     public Viewer viewerList;

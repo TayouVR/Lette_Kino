@@ -1,10 +1,3 @@
-import java.sql.Time;
-import java.time.Instant;
-import java.time.temporal.TemporalField;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-
 public class Cinema {
     private String name;
     private Hall[] hallList;
