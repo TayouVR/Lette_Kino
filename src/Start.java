@@ -27,7 +27,7 @@ public class Start {
         ERROR_CODE_HANDLER(movies.get(0).getNextPresentation().book(peter));
 
         // check seats
-        c.getHallAtIndex(1).printAllSeats();
+        movies.get(0).getNextPresentation().ho.printAllSeats();
     }
 
     public static void ERROR_CODE_HANDLER(int errorCode) {
