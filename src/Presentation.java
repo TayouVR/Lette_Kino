@@ -22,6 +22,7 @@ public class Presentation {
             if (hall.occupyFreeSeat(viewer)) {
                 viewer.money -= linkedMovie.price;
                 viewerList.add(viewer);
+                System.out.println(viewer.name + " bought a ticket for " + linkedMovie.title + " for " + linkedMovie.price + "€");
                 return 0;
             }
             return 2;

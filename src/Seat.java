@@ -13,6 +13,11 @@ public class Seat {
     }
 
     public void print() {
+        if (isOccupied) {
+            System.out.println("This seat is occupied by: " + occupant.name);
+        } else {
+            System.out.println("This seat is not occupied");
+        }
 
     }
 }
