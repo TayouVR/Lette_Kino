@@ -26,7 +26,11 @@ public class Movie {
     }
 
     public void print() {
-
+        System.out.println("\n----- List of all presentations for " + title + " -----");
+        for (Presentation p: presentations) {
+            System.out.println("Presentation " + p.date + p.time);
+            p.ho.printAllSeats();
+        }
     }
 
 }

@@ -8,7 +8,7 @@ public class Cinema {
     }
 
     public void printHalls() {
-        System.out.println("------ " + name + " Halls ------");
+        System.out.println("\n------ " + name + " Halls ------");
         int index = 1;
         for (Hall h: hallList) {
             System.out.println("[" + index + "] " + h.getAmountSeats() + " Seats");

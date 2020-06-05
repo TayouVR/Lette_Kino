@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class Presentation {
 
-    private Date date;
-    private Time time;
+    public Date date;
+    public Time time;
     private Hall hall;
     private ArrayList<Viewer> viewerList = new ArrayList<>();
     private Movie linkedMovie;
