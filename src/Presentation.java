@@ -5,16 +5,14 @@ import java.util.Date;
 public class Presentation {
 
     public Date date;
-    public Time time;
     private Hall hall;
     private ArrayList<Viewer> viewerList = new ArrayList<>();
     private Movie linkedMovie;
     public HallOccupation ho;
 
-    Presentation(Movie m, Date d, Time t, Hall h) {
+    Presentation(Movie m, Date d, Hall h) {
         linkedMovie = m;
         date = d;
-        time = t;
         hall = h;
         ho = new HallOccupation(hall);
     }
@@ -24,7 +22,7 @@ public class Presentation {
             if (ho.occupyFreeSeat(viewer)) {
                 viewer.money -= linkedMovie.price;
                 viewerList.add(viewer);
-                System.out.println(viewer.name + " bought a ticket for " + linkedMovie.title + " for " + linkedMovie.price + "€");
+                System.out.println(viewer.name + " bought a ticket for " + linkedMovie.title + " for " + linkedMovie.price + "€ at " + date);
                 return 0;
             }
             return 2;

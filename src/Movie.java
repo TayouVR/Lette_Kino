@@ -21,14 +21,14 @@ public class Movie {
         return (Presentation[]) presentations.toArray();
     }
 
-    public void newPresentation(Hall h, Date d, Time t) {
-        presentations.add(new Presentation(this, d, t, h));
+    public void newPresentation(Hall h, Date d) {
+        presentations.add(new Presentation(this, d, h));
     }
 
     public void print() {
         System.out.println("\n----- List of all presentations for " + title + " -----");
         for (Presentation p: presentations) {
-            System.out.println("Presentation " + p.date + p.time);
+            System.out.println("Presentation " + p.date);
             p.ho.printAllSeats();
         }
     }

@@ -13,8 +13,7 @@ public class Start {
         ArrayList<Movie> movies = new ArrayList<>();
         movies.add(new Movie("Star Wars Part XVII", 149.99f));
         movies.get(0).newPresentation(c.getHallAtIndex(1),
-                new Date(Date.UTC(2020, 8, 10, 12, 30, 0)),
-                new Time(Date.UTC(2020, 8, 10, 12, 30, 0)));
+                new Date(Date.UTC(2020, 8, 10, 12, 30, 0)));
 
         // make viewers
         Viewer hans = new Viewer("Hans", 25);
